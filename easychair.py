@@ -7,154 +7,107 @@ from datetime import datetime
 URLS = [
     'https://easychair.org/cfp/',
     'https://easychair.org/cfp/random.cgi',
-    'https://easychair.org/cfp/area.cgi?area=6',
-    'https://easychair.org/cfp/area.cgi?area=15',
-    'https://easychair.org/cfp/area.cgi?area=13',
-    'https://easychair.org/cfp/area.cgi?area=18',
-    'https://easychair.org/cfp/area.cgi?area=19',
-    'https://easychair.org/cfp/area.cgi?area=8',
-    'https://easychair.org/cfp/area.cgi?area=16',
-    'https://easychair.org/cfp/area.cgi?area=10',
-    'https://easychair.org/cfp/area.cgi?area=24',
-    'https://easychair.org/cfp/area.cgi?area=11',
-    'https://easychair.org/cfp/area.cgi?area=1',
-    'https://easychair.org/cfp/area.cgi?area=17',
-    'https://easychair.org/cfp/area.cgi?area=7',
-    'https://easychair.org/cfp/area.cgi?area=4',
-    'https://easychair.org/cfp/area.cgi?area=5',
-    'https://easychair.org/cfp/area.cgi?area=12',
-    'https://easychair.org/cfp/area.cgi?area=2',
-    'https://easychair.org/cfp/area.cgi?area=14',
-    'https://easychair.org/cfp/area.cgi?area=9',
-    'https://easychair.org/cfp/topic.cgi?tid=670',
-    'https://easychair.org/cfp/topic.cgi?tid=401',
-    'https://easychair.org/cfp/topic.cgi?tid=752',
-    'https://easychair.org/cfp/topic.cgi?tid=26492',
-    'https://easychair.org/cfp/topic.cgi?tid=16901',
-    'https://easychair.org/cfp/topic.cgi?tid=27052',
-    'https://easychair.org/cfp/topic.cgi?tid=16993',
-    'https://easychair.org/cfp/topic.cgi?tid=18115',
-    'https://easychair.org/cfp/topic.cgi?tid=49240',
-    'https://easychair.org/cfp/topic.cgi?tid=3221',
-    'https://easychair.org/cfp/topic.cgi?tid=27610129',
-    'https://easychair.org/cfp/topic.cgi?tid=565064',
-    'https://easychair.org/cfp/topic.cgi?tid=65909',
-    'https://easychair.org/cfp/topic.cgi?tid=6766858',
-    'https://easychair.org/cfp/topic.cgi?tid=1763',
-    'https://easychair.org/cfp/topic.cgi?tid=5691',
-    'https://easychair.org/cfp/topic.cgi?tid=10330',
-    'https://easychair.org/cfp/topic.cgi?tid=72495',
-    'https://easychair.org/cfp/topic.cgi?tid=84867',
-    'https://easychair.org/cfp/topic.cgi?tid=39582319',
-    'https://easychair.org/cfp/topic.cgi?tid=3258657',
-    'https://easychair.org/cfp/topic.cgi?tid=753432',
-    'https://easychair.org/cfp/topic.cgi?tid=37801319',
-    'https://easychair.org/cfp/topic.cgi?tid=67784',
-    'https://easychair.org/cfp/country.cgi?cc=vn',
-    'https://easychair.org/cfp/country.cgi?cc=cn',
-    'https://easychair.org/cfp/country.cgi?cc=us',
-    'https://easychair.org/cfp/country.cgi?cc=it',
-    'https://easychair.org/cfp/country.cgi?cc=in',
-    'https://easychair.org/cfp/country.cgi?cc=de',
-    'https://easychair.org/cfp/country.cgi?cc=jp',
-    'https://easychair.org/cfp/country.cgi?cc=gb',
-    'https://easychair.org/cfp/country.cgi?cc=fr',
-    'https://easychair.org/cfp/country.cgi?cc=ca',
-    'https://easychair.org/cfp/country.cgi?cc=es',
-    'https://easychair.org/cfp/country.cgi?cc=au',
-    'https://easychair.org/cfp/country.cgi?cc=kh',
-    'https://easychair.org/cfp/country.cgi?cc=hr',
-    'https://easychair.org/cfp/country.cgi?cc=es',
-    'https://easychair.org/cfp/country.cgi?cc=fi',
-    'https://easychair.org/cfp/country.cgi?cc=hk',
-    'https://easychair.org/cfp/country.cgi?cc=is',
-    'https://easychair.org/cfp/country.cgi?cc=id',
-    'https://easychair.org/cfp/country.cgi?cc=ie',
-    'https://easychair.org/cfp/country.cgi?cc=is',
-    'https://easychair.org/cfp/country.cgi?cc=jo',
+    'https://easychair.org/cfp/country.cgi?cc=ae',
     'https://easychair.org/cfp/country.cgi?cc=al',
-    'https://easychair.org/cfp/country.cgi?cc=dz',
+    'https://easychair.org/cfp/country.cgi?cc=am',
     'https://easychair.org/cfp/country.cgi?cc=ao',
     'https://easychair.org/cfp/country.cgi?cc=ar',
-    'https://easychair.org/cfp/country.cgi?cc=am',
-    'https://easychair.org/cfp/country.cgi?cc=ar',
     'https://easychair.org/cfp/country.cgi?cc=at',
+    'https://easychair.org/cfp/country.cgi?cc=au',
     'https://easychair.org/cfp/country.cgi?cc=az',
-    'https://easychair.org/cfp/country.cgi?cc=bh',
+    'https://easychair.org/cfp/country.cgi?cc=ba',
     'https://easychair.org/cfp/country.cgi?cc=bd',
     'https://easychair.org/cfp/country.cgi?cc=be',
-    'https://easychair.org/cfp/country.cgi?cc=bj',
-    'https://easychair.org/cfp/country.cgi?cc=bt',
-    'https://easychair.org/cfp/country.cgi?cc=ba',
-    'https://easychair.org/cfp/country.cgi?cc=bw',
-    'https://easychair.org/cfp/country.cgi?cc=br',
-    'https://easychair.org/cfp/country.cgi?cc=bn',
-    'https://easychair.org/cfp/country.cgi?cc=bg',
     'https://easychair.org/cfp/country.cgi?cc=bf',
+    'https://easychair.org/cfp/country.cgi?cc=bh',
+    'https://easychair.org/cfp/country.cgi?cc=bj',
+    'https://easychair.org/cfp/country.cgi?cc=bg',
+    'https://easychair.org/cfp/country.cgi?cc=bn',
+    'https://easychair.org/cfp/country.cgi?cc=br',
+    'https://easychair.org/cfp/country.cgi?cc=bt',
+    'https://easychair.org/cfp/country.cgi?cc=bw',
+    'https://easychair.org/cfp/country.cgi?cc=ca',
+    'https://easychair.org/cfp/country.cgi?cc=ch',
     'https://easychair.org/cfp/country.cgi?cc=cl',
+    'https://easychair.org/cfp/country.cgi?cc=cn',
     'https://easychair.org/cfp/country.cgi?cc=co',
     'https://easychair.org/cfp/country.cgi?cc=cy',
     'https://easychair.org/cfp/country.cgi?cc=cz',
+    'https://easychair.org/cfp/country.cgi?cc=de',
     'https://easychair.org/cfp/country.cgi?cc=dk',
+    'https://easychair.org/cfp/country.cgi?cc=dz',
     'https://easychair.org/cfp/country.cgi?cc=ec',
-    'https://easychair.org/cfp/country.cgi?cc=eg',
     'https://easychair.org/cfp/country.cgi?cc=ee',
+    'https://easychair.org/cfp/country.cgi?cc=eg',
+    'https://easychair.org/cfp/country.cgi?cc=es',
+    'https://easychair.org/cfp/country.cgi?cc=fi',
+    'https://easychair.org/cfp/country.cgi?cc=fr',
+    'https://easychair.org/cfp/country.cgi?cc=gb',
     'https://easychair.org/cfp/country.cgi?cc=ge',
     'https://easychair.org/cfp/country.cgi?cc=gr',
+    'https://easychair.org/cfp/country.cgi?cc=hk',
     'https://easychair.org/cfp/country.cgi?cc=hn',
+    'https://easychair.org/cfp/country.cgi?cc=hr',
     'https://easychair.org/cfp/country.cgi?cc=hu',
-    'https://easychair.org/cfp/country.cgi?cc=ir',
-    'https://easychair.org/cfp/country.cgi?cc=iq',
+    'https://easychair.org/cfp/country.cgi?cc=id',
+    'https://easychair.org/cfp/country.cgi?cc=ie',
     'https://easychair.org/cfp/country.cgi?cc=il',
+    'https://easychair.org/cfp/country.cgi?cc=in',
+    'https://easychair.org/cfp/country.cgi?cc=iq',
+    'https://easychair.org/cfp/country.cgi?cc=ir',
+    'https://easychair.org/cfp/country.cgi?cc=is',
+    'https://easychair.org/cfp/country.cgi?cc=it',
+    'https://easychair.org/cfp/country.cgi?cc=jo',
+    'https://easychair.org/cfp/country.cgi?cc=jp',
     'https://easychair.org/cfp/country.cgi?cc=ke',
     'https://easychair.org/cfp/country.cgi?cc=kg',
-    'https://easychair.org/cfp/country.cgi?cc=lv',
+    'https://easychair.org/cfp/country.cgi?cc=kh',
+    'https://easychair.org/cfp/country.cgi?cc=kz',
+    'https://easychair.org/cfp/country.cgi?cc=lk',
     'https://easychair.org/cfp/country.cgi?cc=lt',
     'https://easychair.org/cfp/country.cgi?cc=lu',
+    'https://easychair.org/cfp/country.cgi?cc=lv',
+    'https://easychair.org/cfp/country.cgi?cc=ma',
+    'https://easychair.org/cfp/country.cgi?cc=me',
     'https://easychair.org/cfp/country.cgi?cc=mk',
-    'https://easychair.org/cfp/country.cgi?cc=my',
+    'https://easychair.org/cfp/country.cgi?cc=mn',
     'https://easychair.org/cfp/country.cgi?cc=mr',
     'https://easychair.org/cfp/country.cgi?cc=mu',
     'https://easychair.org/cfp/country.cgi?cc=mx',
-    'https://easychair.org/cfp/country.cgi?cc=mn',
-    'https://easychair.org/cfp/country.cgi?cc=me',
-    'https://easychair.org/cfp/country.cgi?cc=ma',
-    'https://easychair.org/cfp/country.cgi?cc=np',
-    'https://easychair.org/cfp/country.cgi?cc=nl',
-    'https://easychair.org/cfp/country.cgi?cc=nz',
+    'https://easychair.org/cfp/country.cgi?cc=my',
     'https://easychair.org/cfp/country.cgi?cc=ng',
+    'https://easychair.org/cfp/country.cgi?cc=nl',
     'https://easychair.org/cfp/country.cgi?cc=no',
+    'https://easychair.org/cfp/country.cgi?cc=np',
+    'https://easychair.org/cfp/country.cgi?cc=nz',
     'https://easychair.org/cfp/country.cgi?cc=om',
-    'https://easychair.org/cfp/country.cgi?cc=pk',
     'https://easychair.org/cfp/country.cgi?cc=pa',
     'https://easychair.org/cfp/country.cgi?cc=pe',
     'https://easychair.org/cfp/country.cgi?cc=ph',
+    'https://easychair.org/cfp/country.cgi?cc=pk',
     'https://easychair.org/cfp/country.cgi?cc=pl',
     'https://easychair.org/cfp/country.cgi?cc=pt',
     'https://easychair.org/cfp/country.cgi?cc=qa',
+    'https://easychair.org/cfp/country.cgi?cc=ra',
     'https://easychair.org/cfp/country.cgi?cc=ro',
+    'https://easychair.org/cfp/country.cgi?cc=rs',
     'https://easychair.org/cfp/country.cgi?cc=ru',
     'https://easychair.org/cfp/country.cgi?cc=rw',
-    'https://easychair.org/cfp/country.cgi?cc=sm',
     'https://easychair.org/cfp/country.cgi?cc=sa',
-    'https://easychair.org/cfp/country.cgi?cc=rs',
+    'https://easychair.org/cfp/country.cgi?cc=se',
     'https://easychair.org/cfp/country.cgi?cc=sg',
     'https://easychair.org/cfp/country.cgi?cc=si',
-    'https://easychair.org/cfp/country.cgi?cc=ra',
-    'https://easychair.org/cfp/country.cgi?cc=kz',
-    'https://easychair.org/cfp/country.cgi?cc=lk',
-    'https://easychair.org/cfp/country.cgi?cc=se',
-    'https://easychair.org/cfp/country.cgi?cc=ch',
-    'https://easychair.org/cfp/country.cgi?cc=tw',
-    'https://easychair.org/cfp/country.cgi?cc=tz',
+    'https://easychair.org/cfp/country.cgi?cc=sm',
     'https://easychair.org/cfp/country.cgi?cc=th',
     'https://easychair.org/cfp/country.cgi?cc=tn',
+    'https://easychair.org/cfp/country.cgi?cc=tw',
     'https://easychair.org/cfp/country.cgi?cc=tz',
-    'https://easychair.org/cfp/country.cgi?cc=ug',
     'https://easychair.org/cfp/country.cgi?cc=ua',
-    'https://easychair.org/cfp/country.cgi?cc=ae',
+    'https://easychair.org/cfp/country.cgi?cc=ug',
+    'https://easychair.org/cfp/country.cgi?cc=us',
     'https://easychair.org/cfp/country.cgi?cc=uy',
     'https://easychair.org/cfp/country.cgi?cc=uz',
+    'https://easychair.org/cfp/country.cgi?cc=vn',
     'https://easychair.org/cfp/country.cgi?cc=ye',
     'https://easychair.org/cfp/country.cgi?cc=zw'
 ]
@@ -174,15 +127,51 @@ def get_current_time():
     """Lấy thời gian hiện tại định dạng YYYY-MM-DD HH:MM:SS"""
     return datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
+# ================== Hàm lấy topics chi tiết ==================
+def scrape_topics(conf_url):
+    """Truy cập trang conference và lấy danh sách topics"""
+    print(f"   🔍 Lấy topics từ {conf_url}...")
+    try:
+        response = requests.get(conf_url, timeout=10)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Tìm header có chứa từ khóa liên quan đến topics
+        headers = soup.find_all(['h2', 'h3', 'h4'])
+        topics_section = None
+        for h in headers:
+            text = h.get_text(strip=True).lower()
+            if any(keyword in text for keyword in ["topic", "scope", "call for papers"]):
+                topics_section = h
+                break
+
+        topics = []
+        if topics_section:
+            # Lấy nội dung ngay sau header
+            content = []
+            next_tag = topics_section.find_next_sibling()
+            while next_tag and next_tag.name in ["p", "ul", "ol", "div"]:
+                content.append(next_tag.get_text(" ", strip=True))
+                next_tag = next_tag.find_next_sibling()
+            topics_text = " ".join(content)
+            # Cắt thành list theo dấu phẩy
+            topics = [t.strip() for t in topics_text.replace("\n", " ").split(",") if t.strip()]
+
+        return topics
+    except Exception as e:
+        print(f"   ⚠️ Lỗi khi lấy topics từ {conf_url}: {e}")
+        return []
+
+# ================== Hàm scrape country ==================
 def scrape_url(url):
-    """Quét dữ liệu từ một URL EasyChair"""
+    """Quét dữ liệu từ một URL EasyChair country"""
     print(f"🚀 Quét dữ liệu từ {url}...")
     try:
         response = requests.get(url, timeout=10)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
         rows = soup.select('table tbody tr')
-        print(f"Tìm thấy {len(rows)} hàng tại {url}.")
+        print(f"✅ Tìm thấy {len(rows)} hàng tại {url}.")
 
         data = []
         base_url = 'https://easychair.org'
@@ -197,18 +186,32 @@ def scrape_url(url):
                     location = cols[2].text.strip()
                     deadline = parse_date(cols[3].text.strip())
                     start_date = parse_date(cols[4].text.strip())
-                    topics = [e.text.strip() for e in cols[5].find_all('span', class_='badge')]
+
+                    # Lấy topics từ country page
+                    topic_cell = cols[5]
+                    badges = topic_cell.find_all('span', class_='badge')
+                    if badges:
+                        topics = [e.text.strip() for e in badges]
+                    else:
+                        topics = [t.strip() for t in topic_cell.get_text(separator=",").split(",") if t.strip()]
+
+                    # Lấy link chi tiết hội nghị
                     url_link = cols[0].find('a', href=True)
                     conf_url = url_link['href'] if url_link else ''
                     if conf_url and not conf_url.startswith('http'):
                         conf_url = base_url + conf_url
+
+                    # Nếu có conf_url thì scrape thêm topics chi tiết
+                    extra_topics = scrape_topics(conf_url) if conf_url else []
+                    all_topics = topics + extra_topics
+
                     data.append({
                         'acronym': acronym,
                         'name': name,
                         'location': location,
                         'deadline': deadline,
                         'start_date': start_date,
-                        'topics': ", ".join(topics),
+                        'topics': ", ".join(sorted(set(all_topics))),
                         'url': conf_url
                     })
             except Exception as e:
