@@ -113,7 +113,7 @@ URLS = [
 ]
 
 # API và headers
-API_URL = 'https://api.rpa4edu.shop/api_research.php'
+API_URL = 'https://api.rpa.asia/api_research.php'
 HEADERS = {'Content-Type': 'application/json'}
 
 def parse_date(date_str):
